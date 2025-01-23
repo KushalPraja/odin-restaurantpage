@@ -1,5 +1,70 @@
-/* styles.css */
+
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+   
+  /* Stick to top */
+  position: fixed; /* Use fixed positioning to make it stay at the top */
+  top: 0;
+  width: 100%; /* Make the header span the full width of the screen */
+
+}
+
+/* General styles */
 body {
-    background-color: rgb(224, 143, 143);
-  }
   
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  justify-content: center; /* Center the card horizontally */
+  align-items: center; /* Center the card vertically */
+  min-height: 100vh;
+  flex-direction: column;
+
+  background: #4ECDC4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+#content {
+  display: flex;
+  flex-direction: column;
+  width: 400px; /* Adjust width for a card-like appearance */
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for a card */
+  border-radius: 12px; /* Round the corners for a card effect */
+  text-align: center; /* Center the text within the card */
+}
+
+/* Title styling */
+.title h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #807effc8;
+  padding-bottom: 0.5rem;
+}
+
+/* Introduction paragraph styling */
+.intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  color: #555;
+}

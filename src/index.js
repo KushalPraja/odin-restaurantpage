@@ -1,9 +1,27 @@
-import "./styles.css";
-import odinImage from "./odin.png";
-import { greeting } from "./greeting.js";
 
-const image = new Image();
-console.log(greeting);
-image.src = odinImage;
-   
-document.body.appendChild(image);
+import createHomePage from "./homepage.js";
+import createMenuPage from "./menupage.js";
+import createAboutPage from "./aboutpage.js";
+import "./menupage.css";
+import "./aboutpage.css"; 
+
+
+createHomePage();
+document.getElementById("menu").addEventListener("click", () => {
+    document.getElementById("content").innerHTML = "";
+    createMenuPage();
+});
+
+document.getElementById("home").addEventListener("click", () => {
+    document.getElementById("content").innerHTML = "";
+    createHomePage();
+}
+);
+
+document.getElementById("about").addEventListener("click", () => {
+    document.getElementById("content").innerHTML = "";
+    createAboutPage();
+}
+);
+
+
